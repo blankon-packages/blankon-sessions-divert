@@ -1,0 +1,10 @@
+#! /bin/sh
+set -e
+
+mkdir /usr/share/wayland-sessions/wayland-divert
+dpkg-divert --rename \
+      --divert /usr/share/wayland-sessions/wayland-divert/gnome-wayland.desktop \
+      --add /usr/share/wayland-sessions/gnome-wayland.desktop
+
+#exit 0
+      

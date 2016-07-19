@@ -1,0 +1,6 @@
+#! /bin/sh
+set -e
+
+dpkg-divert --rename --remove /usr/share/wayland-sessions/gnome-wayland.desktop
+rm -r /usr/share/wayland-sessions/wayland-divert
+

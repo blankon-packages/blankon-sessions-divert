@@ -1,0 +1,10 @@
+#! /bin/sh
+set -e
+
+mkdir /usr/share/xsessions/gnome-divert
+dpkg-divert --rename \
+      --divert /usr/share/xsessions/gnome-divert/gnome.desktop \
+      --add /usr/share/xsessions/gnome.desktop
+
+#exit 0
+      

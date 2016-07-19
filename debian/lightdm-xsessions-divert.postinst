@@ -1,0 +1,10 @@
+#! /bin/sh
+set -e
+
+mkdir /usr/share/xsessions/lightdm-divert
+dpkg-divert --rename \
+      --divert /usr/share/xsessions/lightdm-divert/lightdm-xsessions.desktop \
+      --add /usr/share/xsessions/lightdm-xsessions.desktop
+
+#exit 0
+      
